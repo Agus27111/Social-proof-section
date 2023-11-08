@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@300;500;700;800&family=Kumbh+Sans:wght@300;400;600;900&family=League+Spartan:wght@400;500;700&family=Open+Sans&family=Outfit:wght@100;200&family=Poppins:wght@400;600;700&family=Red+Hat+Display:wght@300;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  font-family: "League Spartan", sans-serif;
+}
+.text {
+  grid-area: text1;
+  margin-right: 100px;
+}
+.star {
+  grid-area: star;
+}
+.person1 {
+  grid-area: person1;
+}
+.person2 {
+  grid-area: person2;
+}
+.person3 {
+  grid-area: person3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "text1 text1 text1 star star star"
+    "person1 person1 person2 person2 person3 person3";
+  height: 100vh;
+  column-gap: 10px;
+  row-gap: 70px;
+  margin: 100px;
+  margin-bottom: 60px;
+  height: auto;
+}
+.text h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 45px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin: 0 100px 20px 0;
+}
+.text p {
+  color: hsl(303, 10%, 53%);
+  line-height: 20px;
+  margin-right: 70px;
+}
+
+.star {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+.item {
+  display: flex;
+  padding: 15px;
+  width: 70%;
+  border-radius: 5px;
+  background-color: hsl(300, 24%, 96%);
+  justify-content: space-around;
+}
+.item p {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  align-items: left;
+  position: relative;
+  right: 15px;
+}
+
+.star2 {
+  position: relative;
+  left: 40px;
+}
+.star3 {
+  position: relative;
+  left: 80px;
+}
+.review {
+  height: auto;
+  background-color: hsl(300, 43%, 22%);
+  padding: 60px 20px;
+
+  border-radius: 5px;
+}
+.review img {
+  max-width: 40px;
+  height: auto;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.flex {
+  display: flex;
+  margin-bottom: 20px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+  line-height: 1.2rem;
+}
+.name p {
+  color: #ffff;
+}
+.name span {
+  color: hsl(333, 80%, 67%);
+}
+
+.comment {
+  color: #ffff;
+  font-weight: 300;
+}
+.person2 {
+  position: relative;
+  top: 20px;
+}
+.person3 {
+  position: relative;
+  top: 40px;
+}
