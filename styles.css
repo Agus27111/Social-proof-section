@@ -130,3 +130,62 @@ body {
   position: relative;
   top: 40px;
 }
+
+@media (min-width: 375px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "text1"
+      "star"
+      "person1"
+      "person2"
+      "person3";
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .text {
+    margin: 50px auto;
+  }
+  .text h1 {
+    margin: 0;
+  }
+  .text p {
+    margin: 0;
+  }
+  .stars {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: auto;
+  }
+  .icon {
+    right: 0;
+    margin-bottom: 10px;
+  }
+  .review {
+    width: auto;
+    height: 200px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .comment {
+    line-height: 1.8em;
+  }
+  .star2 {
+    left: 0;
+  }
+  .star3 {
+    left: 0;
+  }
+}
